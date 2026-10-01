@@ -16,17 +16,17 @@ interface ItemNavbar {
 export class Navbar {
   public readonly itens: ItemNavbar[] = [
     {
-      titulo: 'Sobre',
+      titulo: 'sobre',
       url: '/sobre',
       icone: 'bi-person',
     },
     {
-      titulo: 'Tecnologias',
+      titulo: 'tecnologias',
       url: '/tecnologias',
       icone: 'bi-card-list',
     },
     {
-      titulo: 'Projetos',
+      titulo: 'projetos',
       url: '/projetos',
       icone: 'bi-award',
     },
