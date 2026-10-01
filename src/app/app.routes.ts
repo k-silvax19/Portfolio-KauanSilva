@@ -1,25 +1,25 @@
 import { Routes } from '@angular/router';
 
-import { SobreComponent } from './pages/sobre/sobre.component';
-import { PortfolioComponent } from './pages/portfolio/habilidades.component';
-import { TecnologiasComponent } from './pages/tecnologias/tecnologias.component';
+import { Sobre } from './pages/sobre/sobre';
+import { Habilidades } from './pages/habilidades/habilidades';
+import { Tecnologias } from './pages/tecnologias/tecnologias';
 
 export const routes: Routes = [
   {
     path: '',
     redirectTo: 'sobre',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     path: 'sobre',
-    component: SobreComponent
+    component: Sobre,
   },
   {
-    path: 'portfolio',
-    component: PortfolioComponent
+    path: 'habilidades',
+    component: Habilidades,
   },
   {
     path: 'tecnologias',
-    component: TecnologiasComponent
-  }
+    component: Tecnologias,
+  },
 ];
