@@ -15,7 +15,7 @@ export const routes: Routes = [
     component: Sobre,
   },
   {
-    path: 'habilidades',
+    path: 'projetos',
     component: Habilidades,
   },
   {

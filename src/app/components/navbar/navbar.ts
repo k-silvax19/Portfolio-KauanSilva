@@ -21,14 +21,14 @@ export class Navbar {
       icone: 'bi-person',
     },
     {
-      titulo: 'Habilidades',
-      url: '/habilidades',
-      icone: 'bi-award',
-    },
-    {
       titulo: 'Tecnologias',
       url: '/tecnologias',
       icone: 'bi-card-list',
+    },
+    {
+      titulo: 'Projetos',
+      url: '/projetos',
+      icone: 'bi-award',
     },
   ];
 }
