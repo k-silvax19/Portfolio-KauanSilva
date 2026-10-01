@@ -1,0 +1,63 @@
+<div class="container-fluid portfolio">
+  <div class="row min-vh-100">
+
+    <!-- NAVBAR -->
+    <nav class="col-3 nav-column">
+      <div class="nav-content">
+
+        <div class="nav-links">
+          @for (item of itens; track $index) {
+            <li class="nav-item">
+              <a
+                class="nav-link fs-6"
+                [routerLink]="item.url"
+                routerLinkActive="active"
+              >
+                <i class="bi {{ item.icone }}"></i>
+                {{ item.titulo }}
+              </a>
+            </li>
+          }
+        </div>
+
+        <div class="external-links">
+          <a href="mailto:kauanmacedo338@gmail.com">
+            <i class="bi bi-envelope"></i>
+            email
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/kauan-silva-711aa03a6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-linkedin"></i>
+            linkedin
+            <span>↗</span>
+          </a>
+
+          <a
+            href="https://github.com/k-silvax19"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bi bi-github"></i>
+            github
+            <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+
+      <button class="theme-button" type="button">
+        ☼
+      </button>
+    </nav>
+
+    <!-- CONTEÚDO DAS PÁGINAS -->
+    <main class="col-9 content">
+      <router-outlet></router-outlet>
+    </main>
+
+  </div>
+</div>
