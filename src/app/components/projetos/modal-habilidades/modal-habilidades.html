@@ -1,0 +1,31 @@
+<!-- Modal -->
+<div
+  class="modal modal-lg fade"
+  id="habilidadeModal"
+  tabindex="-1"
+  aria-labelledby="habilidadeModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="habilidadeModalLabel"> {{ habilidade()?.titulo }}</h1>
+        <button 
+        (click)="modalFechado.emit()"
+        type="button" 
+        class="btn-close" 
+        data-bs-dismiss="modal" 
+        aria-label="Close">
+        </button>
+
+      </div>
+      <div class="modal-body">
+        <img 
+        class="img-fluid" 
+        [src]="habilidade()?.urlImagem" 
+        [alt]="habilidade()?.titulo"
+        >
+      </div>
+    </div>
+  </div>
+</div>
