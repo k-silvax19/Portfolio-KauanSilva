@@ -73,7 +73,13 @@
           "builder": "@angular/build:unit-test"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://k-silvax19.github.io/Portfolio-KauanSilva/",
+            "name": "Kauan Silva",
+            "email": "kauanmacedo338@gmail.com"
+
+          }
         }
       }
     }
